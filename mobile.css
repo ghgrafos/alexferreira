@@ -1,0 +1,539 @@
+/* header mobile 1440px */
+@media only screen and (max-width: 1440px){
+	header{
+	width: 100%;
+	height: 600px;
+}
+/* header foto-logo mobile*/
+	.logo-foto img{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	position:relative;
+	top: 190px;
+	
+	}
+}
+
+/* header mobile 1024px */
+@media only screen and (max-width: 1024px){
+	/* header mobile*/
+	header{
+	width: 100%;
+	height: 469px;
+}
+/* header foto-logo mobile*/
+	.logo-foto img{
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
+	position:relative;
+	top: 140px;
+	}
+	
+	.efeito{
+		width: 470px;
+	    font-size: 1.5pc;
+	    position: relative;
+		left: 53.5%;
+		top: 60px;
+	
+	}
+}
+
+/* desempenho mobile 800px */
+@media only screen and (max-width: 768px){
+
+	/* menu */
+	.menutop  a{
+	text-decoration: none;
+	font-size: 20px;
+}
+/* titulos */
+h1,h2,h3{
+		margin-top: 0px; 
+		font-size: 1.15em;
+	}
+	/* header mobile*/
+	header{
+	width: 100%;
+	height: 358px;
+}
+/* secão */
+section{
+	background:#EAEEE8;
+	max-width: 740px;
+	padding: 50px 15px;
+}
+/* efeito jquey titulo*/
+.efeito{
+	width: 348px;
+	font-size: 1.5pc;
+	position: relative;
+	top: 30px;	
+}
+#nome{
+	width:460px;
+	font-size: 2.0pc;
+	position: relative;
+	top: 20px;
+	
+}
+/* header foto-logo mobile*/
+	.logo-foto img{
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	position:relative;
+	top: 130px;
+}
+	/* contato scala aumentada*/
+	.link-contato p:hover{
+	transform: scale(1.1);
+	transition: all 0.2s ease-in;
+}
+
+/* fotos certificados*/
+#expandedImg{
+	width: 600px;
+	height: 480px;
+	position: relative;
+	left: 40px;
+	bottom: 20px;
+	 border: 1px solid blue;
+
+}
+.closebtn {
+  position: absolute;
+  top: -20px;
+  right: 50px;
+   cursor: pointer; 
+
+}
+
+.idioma h2{
+	margin-top: 50px;
+}
+.idioma{
+		height: 160px;
+	}
+
+
+/* desempenho mobile  */
+@media only screen and (max-width: 700px){
+	
+	/* menu mobile  */
+	.menutop  a{
+	text-decoration: none;
+	font-size: 20px;
+	}
+	/* Titulo mobile  */
+	h1,h2,h3{
+		margin-top: 0px; 
+		font-size: 1.15em;
+	}
+	/* header mobile*/
+	header{
+	width: 100%;
+	height: 325px;
+}
+/* secão */
+section{
+	background:#EAEEE8;
+	max-width: 670px;
+	padding: 50px 15px;
+}
+/* header foto-logo mobile*/
+	.logo-foto img{
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	position:relative;
+	top: 120px;
+	}
+	/* efeito jquey titulo*/
+.efeito{
+	width: 290px;
+	font-size: 1.2pc;
+	position: relative;
+	left: 56.5%;
+	top: 30px;	
+}
+
+	/* fotos certificados*/
+#expandedImg{
+	width: 600px;
+	height: 480px;
+	position: relative;
+	left: 30px;
+	bottom: 20px;
+
+}
+.closebtn {
+  position: absolute;
+  top: -50px;
+  right: 5px;
+  cursor: pointer; 
+
+	}
+	.idioma{
+		height: 360px;
+	}
+
+}
+
+
+/* desempenho mobile  */
+@media only screen and (max-width: 600px){
+	/* menu mobile  */
+	.menutop  a{
+	text-decoration: none;
+	font-size: 19px;
+}
+	li{
+		padding: 5px;
+		margin: 4px;
+	}
+	/* secão */
+section{
+	background:#EAEEE8;
+	max-width: 570px;
+	padding: 45px 15px;
+}
+	/* titulomobile  */
+	h1,h2,h3{
+		margin-top: 0px; 
+		font-size: 1.15em;
+	}
+	/* header mobile*/
+	header{
+	width: 100%;
+	height: 279px;
+}
+/* header foto-logo mobile*/
+	.logo-foto img{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	position:relative;
+	top: 103px;
+}
+/* efeito jquey titulo*/
+#nome{
+	width:250px;
+	font-size: 1.9pc;
+	position: relative;
+	top: 20px;
+}
+.efeito{
+	width: 260px;
+	font-size: 1.2pc;
+	position: relative;
+	left: 56.5%;
+	top: 30px;	
+}
+	/* fotos certificados*/
+#expandedImg{
+	width: 500px;
+	height: 480px;
+	position: relative;
+	left: 25px;
+	bottom: 10px;
+	 border: 1px solid blue;
+
+}
+.closebtn {
+  	position: absolute;
+  	top: -45px;
+  	right: 10px;
+   cursor: pointer; 
+
+	}
+	.skill-foto{
+		grid-template-columns: repeat(2,1fr);
+	}
+	.skill-foto img{
+	margin-left: 30px;
+	}
+}
+/* desempenho mobile 425px L*/
+@media only screen and (max-width:425px){
+	/* titulo */
+	h1,h2,h3{
+		margin-top: -12px; 
+		font-family: 'Fruktur', cursive;
+		color:#606060;
+		font-size: 1.15em;
+	}
+	/* menu mobile*/
+	.menutop  a{
+	text-decoration: none;
+	font-size: 16px;
+	}
+	li{
+	padding: 5px;
+	margin: 1px;
+	}
+	.foto-perfil{
+	float:none;
+	position: relative;
+	left: 100px;
+	
+	}
+	/* header mobile*/
+	header{
+	width: 100%;
+	height: 198px;
+	}
+	/* secão */
+section{
+	background:#EAEEE8;
+	max-width: 400px;
+	padding: 80px 15px 2px;
+}
+	/* efeito jquey titulo*/
+#nome{
+	width:200px;
+	font-size: 1.3pc;
+	position: relative;
+	top: 5px;
+}
+.efeito{
+	width: 220px;
+	font-size: 1.0pc;
+	position: relative;
+	left: 48%;
+	top: 10px;	
+}
+/* header foto-logo mobile*/
+	.logo-foto img{
+	width: 95px;
+	height: 95px;
+	border-radius: 50%;
+	position:relative;
+	top: 75px;
+	}
+	/* contato scala aumentada*/
+	.link-contato{
+	font-size: 1.2pc;
+	}
+	.link-contato p:hover{
+	transform: scale(1.1);
+	transition: all 0.2s ease-in;
+	}
+	/* fotos certificados*/
+	.certificado {
+	width: 100%;
+	height: 350px;
+	margin-top: 20px;
+}
+	.column img {
+	width:400px;
+ 	 opacity: 1; 
+ 	 cursor: pointer; 
+ 	border: 1px solid blue;
+}
+	#expandedImg{
+	display: none;
+}
+.closebtn {
+ 	display: none;
+
+	}
+.btn-certificado{
+	margin-top: 100px;
+}
+	.skill-foto{
+		grid-template-columns: repeat(1,1fr);
+
+	}
+	.skill-foto img{
+	margin-left: 80px;
+	}
+}
+/* desempenho mobile 375px M*/
+@media only screen and (max-width: 375px){
+	/* menu mobile*/
+	.menutop  a{
+	text-decoration: none;
+	font-size: 15px;
+	}
+.foto-perfil{
+	float:none;
+	position: relative;
+	left: 70px;
+	
+	}
+li{
+	padding: 2px;
+	margin: 1px;
+	
+}
+h1,h2,h3{
+		margin-top: -18px; 
+		font-size: 1.15em;
+	}
+	/* header mobile*/
+	header{
+	width: 100%;
+	height: 174px;
+}
+section{
+	background:#EAEEE8;
+	max-width: 360px;
+	padding: 80px 15px 2px;
+}
+	/* efeito jquey titulo*/
+#nome{
+	width:200px;
+	font-size: 1.1pc;
+	position: relative;
+	top: 5px;
+}
+.efeito{
+	width: 220px;
+	font-size: 1.0pc;
+	position: relative;
+	left: 40%;
+	top: 10px;	
+}
+/* header foto-logo mobile*/
+	.logo-foto img{
+	width: 68px;
+	height: 68px;
+	border-radius: 50%;
+	position:relative;
+	top: 65px;
+}
+	/* fotos certificados*/
+.certificado {
+	width: 100%;
+	height: 350px;
+	margin-top: 20px;
+}
+	.column img {
+	width:350px;
+ 	 opacity: 1; 
+ 	 cursor: pointer; 
+ 	border: 1px solid blue;
+}
+.btn-certificado{
+	margin-top: 40px;
+}
+	#expandedImg{
+	display: none;
+}
+.closebtn {
+ 	display: none;
+
+	}
+	.skill-foto img{
+	margin-left: 60px;
+	}
+}
+/* desempenho mobile 320px S*/
+@media only screen and (max-width: 320px){
+	/* menu mobile*/
+	.menutop  a{
+	text-decoration: none;
+	font-size: 13px;
+}
+li{
+	padding:2px;
+	margin:-1px;
+}
+h1,h2,h3{
+		margin-top: -22px; 
+		font-size: 1.15em;
+	}
+	h2{
+		position: relative;
+		left: -2px;
+	}
+	.foto-perfil{
+	float:none;
+	position: relative;
+	left: 40px;
+	
+	}
+	/* header mobile*/
+	header{
+	width: 100%;
+	height: 148px;
+}
+section{
+	background:#EAEEE8;
+	max-width: 300px;
+	padding: 80px 15px 2px;
+}
+	/* efeito jquey titulo*/
+#nome{
+	width:200px;
+	font-size: 1.1pc;
+	position: relative;
+	top: 5px;
+}
+.efeito{
+	width: 310px;
+	font-size: 1.0pc;
+	position: relative;
+	left: 2%;
+	top: 10px;	
+}
+/* header foto-logo mobile*/
+	.logo-foto img{
+	width: 58px;
+	height: 58px;
+	border-radius: 50%;
+	position:relative;
+	top: 55px;
+	}
+	/* link de contato mobile*/
+	.link-contato{
+	text-align: center;
+	font-size: 1.1pc;
+	}
+	.link-contato p:hover{
+	transform: scale(1.0.2);
+	transition: all 0.2s ease-in;
+	}
+	body{
+	background:#EAEEE8;
+	}
+	/* fotos certificados*/
+	.certificado {
+	width: 100%;
+	height: 250px;
+	margin-top: 20px;
+}
+	.column img {
+	width:300px;
+ 	opacity: 1; 
+ 	cursor: pointer; 
+ 	border: 1px solid blue;
+}
+.btn-certificado{
+	margin-top: 80px;
+}
+	#expandedImg{
+	display: none;
+}
+.closebtn {
+ 	display: none;
+
+	}
+	.idiomaespanol p {
+	position: relative;
+	left: 180px;
+}
+.skill-foto img{
+	margin-left: 35px;
+	}
+	.idioma{
+		height: 370px;
+	}
+}
+
+
+
+

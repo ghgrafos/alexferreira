@@ -1,0 +1,365 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	font-size: 1.25em;
+	color:#222222;	
+	
+}
+header{
+	width: 100%;
+	height: 540px;
+
+}
+#nome{
+	width:460px;
+	font-size: 3.5pc;
+	color:black;
+	position: relative;
+	left: -450px;
+	top: 50px;
+	
+}
+
+#voltaTop{
+	background-image: url("Tecnologia.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.efeito{
+	width: 620px;
+	font-size: 2.0pc;
+	color:black;
+	position: relative;
+	left: 53.5%;
+	top: 60px;
+}
+.efeito::after{
+	content: '|';
+	margin-left: 2px;
+	opacity: 1;
+	animation: pisca .7s infinite;
+}
+@keyframes pisca{
+	0%,100%{
+		opacity: 1;
+	}
+	50%{
+		opacity: 0;
+	}
+}
+
+a{
+	text-decoration: none;
+}
+h1,h2,h3{
+		margin-top: 0px; 
+		font-family: 'Montserrat',Sans-serif;
+		color:#606060;
+
+}
+/* seção menu*/
+.menutop{
+	font-family: 'Montserrat',Sans-serif;
+	color:white;
+	background:black;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	z-index: 1;
+	position: relative;
+	margin-top: -45px;
+}
+.menutop{
+	position: sticky;
+	top: 0px;
+	
+}
+.menutop  a{
+	text-decoration: none;
+	font-size: 25px;
+}
+.menutop li:hover{
+	border-color:white;
+}
+li{
+	display: inline-block;
+	padding: 5px;
+	margin: 5px;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+.nome-titulo a{
+	color: white;
+}
+.logo-foto{
+	width: 100%;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+   text-align: center;
+	
+}
+.logo-foto img{
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
+	border: 2px solid black;
+	position:relative;
+	top: 180px;
+	
+
+}
+.logo-foto p{
+	font-family: 'Fruktur', cursive;
+	color:black;
+	text-shadow: 2px 2px 2px white;
+	font-size: 2.2pc;
+	
+}
+.foto-perfil{
+	float: left;
+	width: 200px;
+	height: 230px;
+	border-radius: 15%;
+	padding-right: 15px;
+}
+section{
+	background:#EAEEE8;
+	max-width: 960px;
+	margin: 15 auto;
+	padding: 60px 15px;
+	box-shadow: 1px 1px 5px 5px black;
+}
+.idioma{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border: 1px solid black;
+}
+.titulo-idioma{
+	width: 150px;
+	position: relative;
+	left:40%;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+.idiomaingles{
+	width: 350px;
+	text-align: center;
+}
+.inglesdiv::before{
+	margin-top: -5px;
+	content: "\1F449";
+}
+.grid-container-ingles{
+	width: 100%;
+	height: 17px;
+	background: white;
+	border: 1px solid blue;
+	margin: 2px;
+}
+.ingles{
+	width: 40%;
+	height: 15px;
+	background: #EC9B56;
+
+}
+.inglesdiv{
+	display: flex;
+	justify-content: space-around;
+
+}
+.inglesdiv:hover{
+	cursor:pointer;
+}
+#txtingles{
+	text-align: left;
+	cursor:pointer;
+}
+.idiomaespanol{
+	width: 350px;
+}
+.idiomaespanol p {
+	position: relative;
+	left: 240px;
+}
+.espanoldiv{
+	display: flex;
+	justify-content: space-around;	
+}
+.espanoldiv::before{
+	margin-top: -5px;
+	content: "\1F449";
+}
+.grid-container-espanol{
+	width: 100%;
+	height: 17px;
+	border: 1px solid blue;
+	background: white;
+	margin-top: 2px;
+
+}
+.espanol{
+	width:80%;
+	height: 15px;
+	background: #64C6DD;
+}
+#txtespanol:hover{
+	cursor: pointer;
+}
+.espanoldiv:hover{
+	cursor: pointer;
+}
+.idiomaespanol p{
+	width: 100px;
+}
+
+/* seção fotos certificados alterado o modelo verificar porque a imagem fica por cima do menu?*/
+.certificado {
+	width: 100%;
+	height: 310px;
+
+
+}
+.certificado div{
+	display: flex;
+	justify-content: center;
+	z-index: 0;
+}
+.btn-certificado{
+	font-size: 25px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	text-align: center;	
+}
+
+* {
+  box-sizing: border-box;
+}
+/* Style the images inside the grid */
+.column img {
+	width:300px;
+ 	 opacity: 1; 
+ 	 cursor: pointer; 
+ 	border: 1px solid blue;
+}
+/* The expanding image container */
+.container {
+	position: relative;
+	top: 20px;
+  	position: relative;
+  	display: none; 
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+  color:red;
+
+}
+/* aumentar a imagem  */
+#expandedImg{
+	width: 600px;
+	height: 480px;
+	position: relative;
+	left: 150px;
+	bottom: 20px;
+	 border: 1px solid blue;
+
+}
+/* seção habilidade*/
+.skill-foto{
+	display: grid;
+	grid-template-columns: repeat(3,auto);
+	grid-gap: 20px;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+.skill-foto>div{
+	border: 1px solid black;
+	border-radius: 5%;
+	background: white;
+	border: 1px solid blue;
+}
+.skill-foto>div:hover{
+	border: 2px solid #42B6FF;
+	transform: scale(1.1);
+	transition: all 0.3s ease-in;
+}
+.skill-foto img{
+	max-width: 100%;
+	margin-top: 1px;
+	border-radius: 5%;
+}
+/* seção rodapé*/
+footer{
+	background: #6C7280;
+	max-width: 100%;
+	margin:auto;
+	padding-bottom: 0;
+	font-size: 0.9em;
+}
+.link-contato{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background:#6C7280;
+	font-size: 1.3pc;
+}
+.link-contato a{
+	color: black;
+}
+.link-contato a:hover{
+	color:white;
+}
+.link-contato p:hover{
+	transform: scale(1.2);
+	transition: all 0.2s ease-in;
+}
+.link-social {
+	width: 100%;
+	height: 55px;
+	padding-top: 2px;
+	padding-bottom: 9px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background:black;
+	color: white;
+}
+.link-social img:hover{
+	border: 1px solid white;
+	border-radius: 15px;
+	transform: scale(1.1);
+	transition: all 0.2s ease-in;
+}
+
+
+#copy{
+	color: black;
+	text-align: center;
+}
+a:active{
+	color: white;
+}
+a{
+	color: blue;
+}

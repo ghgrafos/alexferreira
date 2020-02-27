@@ -1,0 +1,262 @@
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+
+	<title>Alex Ferreira</title>
+	<link rel="stylesheet" type="text/css" href="alex.css"><!--CSS3-->
+	<link rel="stylesheet" type="text/css" href="mobile.css"><!--responsivo-->
+	<script type="text/javascript" src="alex.js"></script><!--javascript-->
+</head>
+<body>
+
+	<header id="voltaTop">
+		<p id="nome" class="nome"> ALEX FERREIRA</p>
+		<p class="efeito">Eu sou um DESENVOLVEDOR FRONT-END, eu crio Site, App e Layout fantásticos.</p>
+
+	</header>
+
+		<ul class="menutop">
+		<p><a href="#voltaTop">Alex Ferreira<br>Desenvolvedor Front end</a>
+		</p>
+				<li><a href="#secao-sobre">Sobre</a></li>
+				<li><a href="#secao-formacao">Formação</a></li>
+				<li><a href="#secao-skill">Skill</a></li>
+				<li><a href="#">Contato</a></li>
+			</ul>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><!--jquery-->
+		<script type="text/javascript" src="jquery.cycle.lite.js"></script>
+		
+	
+	<script>//Código Jquery
+	//animação da esquerda para direita nome => alex ferreira =>mobile
+		var nome = $('#nome');
+		var largura = window.innerWidth;
+
+		if(largura ){
+			nome.animate({
+				left:"450"
+			},2000)
+
+			}if(largura >= 769 & (largura <= 1024)){
+				nome.animate({
+				left:"240"
+				},2000);
+
+				}if (largura >= 700 & (largura <= 768)){
+				nome.animate({
+				left:"230"
+			},2000);
+
+				}if (largura >= 600 &(largura <= 699)){
+				nome.animate({
+				left:"210"
+			},2000);
+
+			}if (largura >= 426 & (largura <=599)){
+				nome.animate({
+				left:"200"
+			},2000);
+
+				}if (largura >= 376 & (largura<=425)){
+				nome.animate({
+				left:"110"
+			},2000);
+
+			}if (largura >= 320 &  (largura <=375)){
+				nome.animate({
+				left:"100"
+			},2000);
+
+			}if (largura == 319){
+				nome.animate({
+				left:"90"
+			},2000);
+		}
+			// efeito maquina de escrever class= efeito
+			const efeito = document.querySelector('.efeito');
+        		maquinadeescrever(efeito); 
+			function maquinadeescrever(elemento) {
+				const texto = elemento.innerHTML.split('');
+				elemento.innerHTML='';
+				texto.forEach((letra,i)=>{
+					setTimeout(() => elemento.innerHTML += letra,100 *i);
+				});
+			 }
+			 //função efeito maquina de escrever continuo javascript
+			function repeti() {
+			
+				const efeito = document.querySelector('.efeito');
+        		maquinadeescrever(efeito); 
+			function maquinadeescrever(elemento) {
+				const texto = elemento.innerHTML.split('');
+				elemento.innerHTML='';
+				texto.forEach((letra,i)=>{
+					setTimeout(() => elemento.innerHTML += letra,100 *i);
+				});
+			 }
+			}
+			setInterval(repeti,10000);
+
+		
+		
+	//scroll slow in menu
+	var link = $(".menutop li a ")
+
+				link.on("click",function() {
+			var selector = $(this).attr("href");
+			var posicao  = $(selector).offset().top;
+			$("html, body").animate({scrollTop:posicao},1000);
+			})
+
+        //ciclo de foto certifidado
+        $(function () {
+        $('.certificado div').cycle({ 
+            fx:'fade', 
+             speed:1000, 
+              timeout:1000,
+              next:"#proximo",
+              prev:"#anterior"
+          });
+        })
+        
+	</script>
+		<!--Descrição pessoal e profissional-->
+	<section id="secao-sobre" class="linha-azul-bottom">
+		<h1>SOBRE</h1></br>
+					<img src="fundo-header.jpg" class="foto-perfil" >
+        			<p>&nbsp;&nbsp;&nbsp;&nbsp;Oi! meu nome é Alex Ferreira, sou graduado em <strong> Administração de empresas</strong> e estou cursando <strong> Analise e
+            		Desenvolvimento de Sistemas.</strong>
+            		</p></br>
+        			<p>&nbsp;&nbsp;&nbsp;&nbsp;Venho dedicando-me dia após dia em busca de aprimorar os meus conhecimentos para torna-me um excelente profissional, além da faculdade busco outros canais de aprendizado como livros, palestras, rede social (foco em programação, tecnologias) e curso online mais abaixo tem alguns certificados de cursos já realizados.</p></br>  			
+	</section>
+
+	<section id="secao-formacao" class="linha-azul-bottom">
+		<h2>FORMAÇÃO ACADÊMICA</h2></br>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Analise e Desenvolvimento de Sistemas (UNIBR), cursando o último semestre.</br>
+            	Período: 02/2018 à 06/2020.</p></br>
+       		 <p>&nbsp;&nbsp;&nbsp;&nbsp;Administração de Empresa (UNIP), concluído em 2017.</p></br>
+		</div>
+		<h3>CERTIFICADOS</h3></br>
+		<div class="certificado">
+         <!-- fotos de certificado!-->
+			<div>
+
+			 <div class="column" id="foto1">
+ 				 <img src="html5.jpg" onclick="myFunction(this);">
+ 			  </div>
+
+ 			<div class="column">
+ 				<img src="mysql1.jpg" onclick="myFunction(this);">
+ 			</div>
+
+ 			<div class="column">
+ 				<img src="php.jpg"  onclick="myFunction(this);">
+ 			</div>
+
+ 			<div class="column">
+ 				<img src="css.png"  onclick="myFunction(this);">
+ 			</div>
+
+ 			<div class="column" id="column5" >
+ 				<img src="big_data.png" onclick="myFunction(this);">
+ 			</div>
+
+ 			<div class="column" id="column6">
+ 				<img src="ciencia_dados.png"  onclick="myFunction(this);">
+ 			</div>
+      </div>
+      
+ 		</div>
+         <!-- botão de mudar a foto do certificado!-->
+          <div class="btn-certificado">
+              <a href="#" id="anterior">Anterior</a>
+               <a href="#" id="proximo">Proxima</a>
+          </div>
+ 		<div class="container">
+  			<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  				<img id="expandedImg">
+  			<div id="imgtext"></div>
+		</div>
+	</section>
+
+	<section id="secao-skill">
+		<h1>HABILIDADE</h1> </br>
+		<div class="skill-foto">
+ 				<div>
+ 					<img src="html5.png" alt="imagem-error">
+ 					<p>&nbsp; &#9679; &nbsp;Intermediário</p>
+ 				</div>
+ 				<div>
+ 					<img src="css3.png" alt="imagem-error">
+ 					<p>&nbsp; &#9679; &nbsp;Intermediário</p>
+ 				</div>
+ 				<div>
+ 					<img src="javascript.png" alt="imagem-error">
+ 					<p>&nbsp; &#9679; &nbsp;Básico</p>
+ 				</div>
+ 				<div>
+ 					<img src="php.png" alt="imagem-error">
+ 					<p>&nbsp; &#9679; &nbsp;Básico</p>
+ 				</div>
+ 				<div>
+ 					<img src="mysql.png" alt="imagem-error">
+ 					<p>&nbsp; &#9679; &nbsp;Básico</p>
+ 				</div>
+ 				<div>
+ 					<img src="csharp.png" alt="imagem-error">
+ 					<p>&nbsp; &#9679; &nbsp;Básico</p>
+ 				</div>
+ 			</div>
+      	
+   	 		 </br>
+         <h2 class="titulo-idioma">IDIOMA</h2>
+   	 		<div class="idioma">
+          <div class="idiomaingles">
+          Basic++
+              <div class="inglesdiv" onclick="clickingles() ">
+   	 			    	 <p>INGLÊS </p>
+                    <div class="grid-container-ingles">
+   	 				           <div class="Skill ingles" ></div>
+   	 				      </div>
+   	 			    </div>
+          <div id="txtingles" onclick="style.display='none'"> </div>
+            <br>
+   	 		 </div>
+        
+        <div class="idiomaespanol">
+          <p>Avanzado</p>
+          <div class="espanoldiv" onclick="clickespanol()">
+              ESPAÑOL
+              <div class="grid-container-espanol">
+                 <div class="Skill espanol"></div>
+              </div>
+  
+          </div>
+              <div id="txtespanol" onclick="style.display='none'">
+              </div>
+        </div>
+          
+        </div>
+	</section>
+	<footer>
+
+		<div class="link-social">
+			<p><a href="https://github.com"target="_blank"><img src="git1.png" width="55" height="50"></a></p>
+			<p><a href="https://www.linkedin.com" target="_blank"><img src="in.png" width="50" height="50"></a>
+			<p><a href="https://www.instagram.com/asfuture.asf/?hl=pt-br/" target="_blank"><img src="instagram.png" width="50" height="50"></a></p>
+			<p><a href="https://twitter.com/Asfuture/"target="_blank"><img src="twitter.png" width="50" height="50"></a></p>
+			<p><a href="https://twitter.com/Asfuture/"target="_blank"><img src="twitter.png" width="50" height="50"></a></p>
+		</div>
+
+			<div class="link-contato">
+			    <p><a class="link" href="https://web.whatsapp.com/" target="_blank">&#9990; (11) 9 9521-1492 &nbsp;</a></p></br>
+           		 <p><a class="link"  href="mailto:asfuture2019@gmail.com"> &#9993; asfuture2019@gmail.com</a></p></br>
+            	<p><a class="link" href="mailto:ferreirasantos1989@hotmail.com">&#9993;ferreirasantos1989@hotmail.com</a></p></br>
+            </div></br>
+		<p id="copy">Copyright&copy;2020&trade;- By Alex Ferreira</p>
+	</footer>
+</body>
+</html>
